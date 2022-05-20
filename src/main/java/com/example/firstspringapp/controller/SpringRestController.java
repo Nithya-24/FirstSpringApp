@@ -19,7 +19,7 @@ public class SpringRestController {
 
     @GetMapping("param/{name}")
     public String sayHelloParam(@PathVariable String name) {
-        return "Hello" +name + "!";
+        return "Hello" + name + "!";
     }
 
     @PostMapping("/post")
@@ -30,7 +30,7 @@ public class SpringRestController {
     @PutMapping("/put/{firstName}")
     public String sayHello(@PathVariable String firstName,
                            @RequestParam(value = "lastName") String lastName) {
-        return "Hello" + firstName + " " +lastName + "!";
+        return "Hello" + firstName + " " + lastName + "!";
     }
 
 }
